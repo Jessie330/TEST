@@ -16,6 +16,15 @@ gtag("config", "G-NNCCGFRL7S");
 <script>
 function trackCTA(){
 	// 送出事件紀錄
+	gtag("event", "分享", {
+		"platform":"Facebook",
+		"title":"如何使用 GA",
+		"value": 1
+	});
+	alert("Event Sent!");
+}
+	function trackCTA(){
+	// 送出事件紀錄
 	gtag("event", "點讚", {
 		"platform":"IG",
 		"title":"如何使用 IG",
